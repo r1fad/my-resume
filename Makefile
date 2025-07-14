@@ -19,4 +19,6 @@ resume: $(OUTPUT_DIR)/resume.tex $(RESUME_SRCS)
 # 	$(CC) -output-directory=$(EXAMPLES_DIR) $<
 
 clean:
-	rm -rf $(RESUME_DIR)/*.pdf
+	rm -rf $(OUTPUT_DIR)/*.pdf
+	rm -rf $(OUTPUT_DIR)/*.aux
+	rm -rf $(OUTPUT_DIR)/*.log
